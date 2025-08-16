@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +13,28 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #f0f4f8; /* Light gray background */
-            color: #333; /* Darker text color for better readability */
+            background: #f0f4f8;
+            /* Light gray background */
+            color: #333;
+            /* Darker text color for better readability */
             line-height: 1.6;
         }
-        
+
         .header {
-            background: #005eb8; /* Dark blue header */
-            color: white; /* White text in header */
+            background: #005eb8;
+            /* Dark blue header */
+            color: white;
+            /* White text in header */
             padding: 0;
             position: sticky;
             top: 0;
             z-index: 100;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        
+
         .header-content {
             max-width: 1280px;
             margin: 0 auto;
@@ -38,31 +42,35 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap; /* Allow wrapping for responsiveness */
+            flex-wrap: wrap;
+            /* Allow wrapping for responsiveness */
         }
-        
+
         .logo-section {
             display: flex;
             align-items: center;
-            gap: 16px; /* Reduced gap for smaller screens */
+            gap: 16px;
+            /* Reduced gap for smaller screens */
         }
-        
+
         .logo {
             font-size: 28px;
             font-weight: 700;
-            color: #ffffff; /* White logo text */
+            color: #ffffff;
+            /* White logo text */
             display: flex;
             align-items: center;
             gap: 8px;
         }
-        
+
         .nav-links {
             display: flex;
             gap: 32px;
         }
-        
+
         .nav-link {
-            color: #e0e0e0; /* Light gray for nav links */
+            color: #e0e0e0;
+            /* Light gray for nav links */
             text-decoration: none;
             font-weight: 500;
             font-size: 14px;
@@ -70,22 +78,26 @@
             border-bottom: 2px solid transparent;
             transition: all 0.2s ease;
         }
-        
-        .nav-link:hover, .nav-link.active {
-            color: #ffffff; /* White on hover */
-            border-bottom-color: #ffffff; /* White underline on hover */
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #ffffff;
+            /* White on hover */
+            border-bottom-color: #ffffff;
+            /* White underline on hover */
         }
-        
+
         .user-section {
             display: flex;
             align-items: center;
             gap: 16px;
         }
-        
+
         .user-avatar {
             width: 36px;
             height: 36px;
-            background: linear-gradient(135deg, #0078d4, #005eb8); /* Gradient for avatar */
+            background: linear-gradient(135deg, #0078d4, #005eb8);
+            /* Gradient for avatar */
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -94,84 +106,93 @@
             font-weight: 600;
             font-size: 14px;
         }
-        
+
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 32px 24px;
-            background: #ffffff; /* White background for the container */
-            border-radius: 12px; /* Rounded corners */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+            background: #ffffff;
+            /* White background for the container */
+            border-radius: 12px;
+            /* Rounded corners */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            /* Slightly stronger shadow */
         }
-        
+
         .page-header {
             margin-bottom: 32px;
         }
-        
+
         .page-title {
             font-size: 32px;
             font-weight: 700;
-            color: #005eb8; /* Dark blue for title */
+            color: #005eb8;
+            /* Dark blue for title */
             margin-bottom: 8px;
         }
-        
+
         .page-subtitle {
-            color: #666; /* Gray subtitle */
+            color: #666;
+            /* Gray subtitle */
             font-size: 16px;
         }
-        
+
         .dashboard-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 32px;
             margin-bottom: 32px;
         }
-        
-        .accounts-section, .quick-actions, .transaction-section {
+
+        .accounts-section,
+        .quick-actions,
+        .transaction-section {
             background: white;
             border-radius: 12px;
             border: 1px solid #e1e8ed;
             overflow: hidden;
         }
-        
+
         .section-header {
             padding: 24px 24px 16px;
             border-bottom: 1px solid #f5f7fa;
         }
-        
+
         .section-title {
             font-size: 20px;
             font-weight: 600;
             color: #1a1a1a;
             margin-bottom: 4px;
         }
-        
+
         .section-subtitle {
             color: #666;
             font-size: 14px;
         }
-        
+
         .account-item {
             padding: 24px;
             border-bottom: 1px solid #f5f7fa;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Fixed typo from 'between' to 'space-between' */
+            justify-content: space-between;
             transition: background-color 0.2s ease;
         }
-        
+
         .account-item:last-child {
             border-bottom: none;
         }
-        
+
         .account-item:hover {
-            background: #f8fafc; /* Light hover effect */
+            background: #f8fafc;
+            /* Light hover effect */
         }
-        
+
         .account-icon {
             width: 48px;
             height: 48px;
-            background: linear-gradient(135deg, #005eb8, #0078d4); /* Gradient for account icons */
+            background: linear-gradient(135deg, #005eb8, #0078d4);
+            /* Gradient for account icons */
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -181,48 +202,50 @@
             margin-right: 16px;
             flex-shrink: 0;
         }
-        
+
         .account-details {
             flex: 1;
             min-width: 0;
         }
-        
+
         .account-name {
             font-weight: 600;
             font-size: 16px;
             color: #1a1a1a;
             margin-bottom: 2px;
         }
-        
+
         .account-number {
             font-size: 13px;
             color: #666;
             font-family: 'SF Mono', Monaco, monospace;
         }
-        
+
         .account-balance {
             text-align: right;
             flex-shrink: 0;
         }
-        
+
         .balance-amount {
             font-size: 24px;
             font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 2px;
         }
-        
+
         .balance-change {
             font-size: 12px;
-            color: #10b981; /* Green for positive changes */
+            color: #10b981;
+            /* Green for positive changes */
         }
-        
+
         .action-btn {
             display: flex;
             align-items: center;
             gap: 12px;
             padding: 16px;
-            background: #f8fafc; /* Light background for action buttons */
+            background: #f8fafc;
+            /* Light background for action buttons */
             border: 1px solid #e1e8ed;
             border-radius: 8px;
             text-decoration: none;
@@ -232,19 +255,22 @@
             transition: all 0.2s ease;
             cursor: pointer;
         }
-        
+
         .action-btn:hover {
-            background: #e1f5fe; /* Light blue on hover */
-            border-color: #b0bec5; /* Darker border on hover */
+            background: #e1f5fe;
+            /* Light blue on hover */
+            border-color: #b0bec5;
+            /* Darker border on hover */
             transform: translateY(-1px);
         }
-        
+
         .transaction-tabs {
             display: flex;
             border-bottom: 1px solid #e1e8ed;
         }
-        
+
         .tab-btn {
+            flex: 1;
             background: none;
             border: none;
             padding: 20px 24px;
@@ -256,14 +282,44 @@
             transition: all 0.2s ease;
             position: relative;
         }
-        
+
         .tab-btn.active {
-            color: #005eb8; /* Dark blue for active tab */
-            border-bottom-color: #005eb8; /* Dark blue underline */
-            background: #f0f4f8; /* Light background for active tab */
+            color: #005eb8;
+            /* Dark blue for active tab */
+            border-bottom-color: #005eb8;
+            /* Dark blue underline */
+            background: #f0f4f8;
+            /* Light background for active tab */
         }
-        
-        .form-input, .form-select {
+
+        .tab-btn:hover {
+            color: #005eb8;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 24px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
             padding: 12px 16px;
             border: 1px solid #d1d5db;
             border-radius: 8px;
@@ -272,15 +328,25 @@
             transition: all 0.2s ease;
             font-family: inherit;
         }
-        
-        .form-input:focus, .form-select:focus {
+
+        .form-input:focus,
+        .form-select:focus {
             outline: none;
-            border-color: #005eb8; /* Dark blue border on focus */
+            border-color: #005eb8;
+            /* Dark blue border on focus */
             box-shadow: 0 0 0 3px rgba(0, 94, 184, 0.1);
         }
-        
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
         .submit-btn {
-            background: linear-gradient(135deg, #005eb8, #0078d4); /* Gradient for submit button */
+            width: 100%;
+            background: linear-gradient(135deg, #005eb8, #0078d4);
+            /* Gradient for submit button */
             color: white;
             border: none;
             padding: 16px 32px;
@@ -291,66 +357,55 @@
             transition: all 0.2s ease;
             box-shadow: 0 2px 4px rgba(0, 94, 184, 0.2);
         }
-        
+
         .submit-btn:hover {
             transform: translateY(-1px);
             box-shadow: 0 4px 8px rgba(0, 94, 184, 0.3);
         }
-        
-        .alert {
-            margin-top: 24px;
-            padding: 16px 20px;
-            border-radius: 8px;
-            font-weight: 500;
-            display: none;
-            animation: slideDown 0.3s ease;
-        }
-        
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .alert.success {
-            background: #ecfdf5; /* Light green background for success */
-            color: #065f46; /* Dark green text */
-            border: 1px solid #a7f3d0; /* Green border */
-        }
-        
-        .alert.error {
-            background: #fef2f2; /* Light red background for error */
-            color: #991b1b; /* Dark red text */
-            border: 1px solid #fecaca; /* Red border */
-        }
 
         /* Modal styles */
         .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1000;
+            /* Sit on top */
             left: 0;
             top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            padding-top: 60px; /* Location of the box */
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            padding-top: 60px;
+            /* Location of the box */
         }
 
         .modal-content {
             background-color: #fefefe;
-            margin: 5% auto; /* 15% from the top and centered */
+            margin: 5% auto;
+            /* 15% from the top and centered */
             padding: 20px;
             border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+            max-width: 500px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
 
         .close {
             color: #aaa;
-            float: right;
+            position: absolute;
+            top: 10px;
+            right: 20px;
             font-size: 28px;
             font-weight: bold;
         }
@@ -362,34 +417,123 @@
             cursor: pointer;
         }
 
+        /* Toast Notification Styles */
+        #toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .toast {
+            background-color: #fff;
+            color: #333;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            min-width: 250px;
+            max-width: 350px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 0.5s forwards, fadeOut 0.5s 3s forwards;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toast-success {
+            border-left: 5px solid #10b981;
+        }
+
+        .toast-error {
+            border-left: 5px solid #ef4444;
+        }
+
+        .toast-icon {
+            font-size: 20px;
+        }
+
+        .toast-success .toast-icon {
+            color: #10b981;
+        }
+
+        .toast-error .toast-icon {
+            color: #ef4444;
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
             .header-content {
-                flex-direction: column; /* Stack items vertically */
-                align-items: flex-start; /* Align items to the start */
+                flex-direction: column;
+                /* Stack items vertically */
+                align-items: flex-start;
+                /* Align items to the start */
             }
 
             .nav-links {
-                flex-direction: column; /* Stack nav links vertically */
-                gap: 16px; /* Space between links */
-                width: 100%; /* Full width for mobile */
+                flex-direction: column;
+                /* Stack nav links vertically */
+                gap: 16px;
+                /* Space between links */
+                width: 100%;
+                /* Full width for mobile */
             }
 
             .user-section {
-                margin-top: 16px; /* Space above user section */
+                margin-top: 16px;
+                /* Space above user section */
             }
 
             .dashboard-grid {
-                grid-template-columns: 1fr; /* Single column layout */
+                grid-template-columns: 1fr;
+                /* Single column layout */
             }
 
             .action-grid {
-                flex-direction: column; /* Stack action buttons vertically */
-                gap: 16px; /* Space between buttons */
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                justify-content: center;
+            }
+
+            .action-btn {
+                flex: 1 1 calc(50% - 10px);
+                min-width: 140px;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            #toast-container {
+                right: 50%;
+                transform: translateX(50%);
+                width: calc(100% - 40px);
             }
         }
     </style>
 </head>
+
 <body>
     <header class="header">
         <div class="header-content">
@@ -504,9 +648,10 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Amount</label>
-                        <input type="number" id="deposit-amount" class="form-input" placeholder="0.00" min="0" step="0.01">
+                        <input type="number" id="deposit-amount" class="form-input" placeholder="0.00" min="0"
+                            step="0.01">
                     </div>
-                    <button class="submit-btn" onclick="deposit()">
+                    <button class="submit-btn" onclick="deposit(event)">
                         <span class="btn-text">Deposit Funds</span>
                     </button>
                 </div>
@@ -523,9 +668,10 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Amount</label>
-                        <input type="number" id="withdraw-amount" class="form-input" placeholder="0.00" min="0" step="0.01">
+                        <input type="number" id="withdraw-amount" class="form-input" placeholder="0.00" min="0"
+                            step="0.01">
                     </div>
-                    <button class="submit-btn" onclick="withdraw()">
+                    <button class="submit-btn" onclick="withdraw(event)">
                         <span class="btn-text">Withdraw Funds</span>
                     </button>
                 </div>
@@ -551,19 +697,17 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Amount</label>
-                        <input type="number" id="transfer-amount" class="form-input" placeholder="0.00" min="0" step="0.01">
+                        <input type="number" id="transfer-amount" class="form-input" placeholder="0.00" min="0"
+                            step="0.01">
                     </div>
-                    <button class="submit-btn" onclick="transfer()">
+                    <button class="submit-btn" onclick="transfer(event)">
                         <span class="btn-text">Transfer Funds</span>
                     </button>
                 </div>
             </div>
-
-            <div id="alert" class="alert"></div>
         </div>
     </div>
 
-    <!-- Modal for Paying Bills -->
     <div id="billModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeBillModal()">&times;</span>
@@ -571,9 +715,9 @@
             <div class="form-group">
                 <label class="form-label">Select Bill Type</label>
                 <select id="bill-type" class="form-select">
-                    <option value="school">School Fees</option>
-                    <option value="water">Water Bill</option>
-                    <option value="electricity">Electricity Bill (ECG)</option>
+                    <option value="School Fees">School Fees</option>
+                    <option value="Water Bill">Water Bill</option>
+                    <option value="Electricity Bill (ECG)">Electricity Bill (ECG)</option>
                 </select>
             </div>
             <div class="form-group">
@@ -587,11 +731,13 @@
                 <label class="form-label">Amount</label>
                 <input type="number" id="bill-amount" class="form-input" placeholder="0.00" min="0" step="0.01">
             </div>
-            <button class="submit-btn" onclick="payBill()">
+            <button class="submit-btn" onclick="payBill(event)">
                 <span class="btn-text">Pay Bill</span>
             </button>
         </div>
     </div>
+
+    <div id="toast-container"></div>
 
     <script>
         let accounts = {
@@ -607,40 +753,39 @@
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
-            
-            // Add active class to selected tab
+
+            // Add active class to selected tab and button
             document.getElementById(tabName + '-tab').classList.add('active');
-            
-            // Find and activate the corresponding button
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => {
-                if (btn.textContent.toLowerCase().includes(tabName)) {
-                    btn.classList.add('active');
-                }
-            });
+            document.querySelector(`.tab-btn[onclick="switchTab('${tabName}')"]`).classList.add('active');
         }
 
         function updateDisplay() {
-            document.getElementById('checking-balance').textContent = '$' + accounts.checking.toLocaleString('en-US', {minimumFractionDigits: 2});
-            document.getElementById('savings-balance').textContent = '$' + accounts.savings.toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('checking-balance').textContent = '$' + accounts.checking.toLocaleString('en-US', {
+                minimumFractionDigits: 2
+            });
+            document.getElementById('savings-balance').textContent = '$' + accounts.savings.toLocaleString('en-US', {
+                minimumFractionDigits: 2
+            });
         }
 
         function showAlert(message, type) {
-            const alert = document.getElementById('alert');
-            const icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-triangle';
-            
-            alert.innerHTML = `<i class="alert-icon fas ${icon}"></i>${message}`;
-            alert.className = `alert ${type}`;
-            alert.style.display = 'block';
-            
+            const toastContainer = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            const icon = type === 'success' ? '<i class="fas fa-check-circle toast-icon"></i>' : '<i class="fas fa-exclamation-triangle toast-icon"></i>';
+            toast.innerHTML = `${icon}<div>${message}</div>`;
+            toastContainer.prepend(toast);
+
             setTimeout(() => {
-                alert.style.display = 'none';
-            }, 4000);
+                toast.style.animation = 'fadeOut 0.5s forwards';
+                setTimeout(() => toast.remove(), 500);
+            }, 3000); // 3 seconds before fade out starts
         }
 
         function setLoading(buttonElement, isLoading) {
             const btnText = buttonElement.querySelector('.btn-text');
             if (isLoading) {
+                btnText.setAttribute('data-original', btnText.textContent);
                 buttonElement.classList.add('loading');
                 btnText.innerHTML = '<span class="spinner"></span>Processing...';
             } else {
@@ -649,103 +794,73 @@
             }
         }
 
-        async function deposit() {
-            const btn = event.target;
-            const originalText = btn.querySelector('.btn-text').textContent;
-            btn.querySelector('.btn-text').setAttribute('data-original', originalText);
-            
+        async function deposit(event) {
+            const btn = event.target.closest('button');
             setLoading(btn, true);
-            
-            // Simulate API call delay
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
             const account = document.getElementById('deposit-account').value;
             const amount = parseFloat(document.getElementById('deposit-amount').value);
-            
             if (!amount || amount <= 0) {
                 showAlert('Please enter a valid amount greater than $0.00', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             accounts[account] += amount;
             updateDisplay();
             showAlert(`Successfully deposited $${amount.toFixed(2)} to your ${account} account`, 'success');
-            
             document.getElementById('deposit-amount').value = '';
             setLoading(btn, false);
         }
 
-        async function withdraw() {
-            const btn = event.target;
-            const originalText = btn.querySelector('.btn-text').textContent;
-            btn.querySelector('.btn-text').setAttribute('data-original', originalText);
-            
+        async function withdraw(event) {
+            const btn = event.target.closest('button');
             setLoading(btn, true);
-            
-            // Simulate API call delay
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
             const account = document.getElementById('withdraw-account').value;
             const amount = parseFloat(document.getElementById('withdraw-amount').value);
-            
             if (!amount || amount <= 0) {
                 showAlert('Please enter a valid amount greater than $0.00', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             if (accounts[account] < amount) {
                 showAlert('Insufficient funds. Please check your account balance and try again.', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             accounts[account] -= amount;
             updateDisplay();
             showAlert(`Successfully withdrew $${amount.toFixed(2)} from your ${account} account`, 'success');
-            
             document.getElementById('withdraw-amount').value = '';
             setLoading(btn, false);
         }
 
-        async function transfer() {
-            const btn = event.target;
-            const originalText = btn.querySelector('.btn-text').textContent;
-            btn.querySelector('.btn-text').setAttribute('data-original', originalText);
-            
+        async function transfer(event) {
+            const btn = event.target.closest('button');
             setLoading(btn, true);
-            
-            // Simulate API call delay
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
             const fromAccount = document.getElementById('transfer-from').value;
             const toAccount = document.getElementById('transfer-to').value;
             const amount = parseFloat(document.getElementById('transfer-amount').value);
-            
             if (!amount || amount <= 0) {
                 showAlert('Please enter a valid amount greater than $0.00', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             if (fromAccount === toAccount) {
                 showAlert('Please select different accounts for the transfer', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             if (accounts[fromAccount] < amount) {
                 showAlert('Insufficient funds in source account. Please check your balance and try again.', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             accounts[fromAccount] -= amount;
             accounts[toAccount] += amount;
             updateDisplay();
             showAlert(`Successfully transferred $${amount.toFixed(2)} from ${fromAccount} to ${toAccount} account`, 'success');
-            
             document.getElementById('transfer-amount').value = '';
             setLoading(btn, false);
         }
@@ -758,43 +873,35 @@
             document.getElementById('billModal').style.display = 'none';
         }
 
-        async function payBill() {
-            const btn = event.target;
-            const originalText = btn.querySelector('.btn-text').textContent;
-            btn.querySelector('.btn-text').setAttribute('data-original', originalText);
-            
+        async function payBill(event) {
+            const btn = event.target.closest('button');
             setLoading(btn, true);
-            
-            // Simulate API call delay
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
             const account = document.getElementById('bill-account').value;
             const amount = parseFloat(document.getElementById('bill-amount').value);
-            
+            const billType = document.getElementById('bill-type').value;
+
             if (!amount || amount <= 0) {
                 showAlert('Please enter a valid amount greater than $0.00', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             if (accounts[account] < amount) {
                 showAlert('Insufficient funds in selected account. Please check your balance and try again.', 'error');
                 setLoading(btn, false);
                 return;
             }
-            
             accounts[account] -= amount;
             updateDisplay();
-            showAlert(`Successfully paid $${amount.toFixed(2)} for ${document.getElementById('bill-type').value} from your ${account} account`, 'success');
-            
+            showAlert(`Successfully paid $${amount.toFixed(2)} for ${billType} from your ${account} account`, 'success');
             document.getElementById('bill-amount').value = '';
             closeBillModal();
             setLoading(btn, false);
         }
 
-        // Initialize the page
         window.addEventListener('load', () => {
             updateDisplay();
+            switchTab('deposit');
         });
     </script>
 </body>
